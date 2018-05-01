@@ -1,6 +1,7 @@
 import unittest
 from radio.radio import check_interval
 
+
 class TestCheckInterval(unittest.TestCase):
 
     def test_within_limits(self):
@@ -23,6 +24,7 @@ class TestCheckInterval(unittest.TestCase):
         self.assertFalse(check_interval(2500, 3420))
         self.assertFalse(check_interval(4000, 7020))
         pass
+
 
 if __name__ == '__main__':
     unittest.main()
